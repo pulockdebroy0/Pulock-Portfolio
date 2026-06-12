@@ -1,0 +1,60 @@
+/* Hallmark · genre: atmospheric · macrostructure: Split Studio · theme: brand-locked (dark paper · yellow accent · Bricolage display) · enrichment: none (portrait + two blooms) · nav: N5 floating pill · footer: Ft5 statement */
+/* axes: paper-band=dark · display-style=geometric-sans · accent-hue=warm-yellow */
+
+:root {
+  /* ---- Colour · OKLCH, anchor hue ~95–100 (yellow) ---- */
+  --color-paper: oklch(14% 0.012 95);
+  --color-paper-2: oklch(17.5% 0.014 95);
+  --color-paper-3: oklch(21% 0.016 95);
+  --color-rule: oklch(26.5% 0.018 95);
+  --color-rule-strong: oklch(34% 0.028 95);
+  --color-ink: oklch(94% 0.01 95);
+  --color-neutral: oklch(70% 0.015 95);
+  --color-muted: oklch(54% 0.02 95);
+  --color-accent: oklch(89% 0.185 100);
+  --color-accent-soft: oklch(89% 0.185 100 / 0.1);
+  --color-accent-faint: oklch(89% 0.185 100 / 0.04);
+  --color-accent-ink: oklch(15% 0.03 95);
+  --color-focus: oklch(89% 0.185 100);
+  --color-danger: oklch(62% 0.21 25);
+
+  /* ---- Type ---- */
+  --font-display-stack: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-body-stack: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono-stack: var(--font-geist-mono), ui-monospace, monospace;
+  --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-display-s: clamp(2rem, 3vw + 1rem, 3.25rem);
+
+  /* ---- Space · 4pt scale ---- */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  /* ---- Z scale ---- */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* ---- Radius ---- */
+  --radius-card: 1.25rem;
+  --radius-input: 0.75rem;
+  --radius-pill: 999px;
+}
