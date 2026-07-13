@@ -60,7 +60,7 @@ export default function AboutSection() {
             Expertise and experience.
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            I bring over 5 years of hands-on experience building digital products, leading teams, and solving complex technical challenges. Every project is informed by real-world constraints and measurable outcomes.
+            Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.
           </p>
         </motion.div>
 
