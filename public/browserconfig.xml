@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/Pulock.jpeg"/>
+            <TileColor>#0d0907</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src="https://pulockdebroy.com"/>
+            <polling-uri2 src="https://pulockdebroy.com"/>
+            <polling-uri3 src="https://pulockdebroy.com"/>
+            <polling-uri4 src="https://pulockdebroy.com"/>
+            <polling-uri5 src="https://pulockdebroy.com"/>
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+    </msapplication>
+</browserconfig>

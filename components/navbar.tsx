@@ -9,9 +9,10 @@ const WHATSAPP_URL = 'https://wa.me/8801739161076'
 
 const navLinks = [
   { name: 'Story', href: '#story' },
+  { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
   { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Publications', href: '#publications' },
+  { name: 'FAQ', href: '#faq' },
 ]
 
 function WhatsAppButton({ className }: { className?: string }) {

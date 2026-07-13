@@ -1,0 +1,5 @@
+Contact: mailto:pulock@ravenence.com
+Contact: https://www.linkedin.com/in/pulock-deb-roy-833584218
+Preferred-Languages: en
+Canonical: https://pulockdebroy.com/.well-known/security.txt
+Expires: 2025-12-31T23:59:59Z
