@@ -17,7 +17,7 @@ const techStack = [
 ]
 
 const roles = [
-  { icon: Globe, title: 'CMO', detail: 'Ravenence Limited' },
+  { icon: Globe, title: 'Co-Founder & CMO', detail: 'Ravenence Limited' },
   { icon: Code, title: 'Developer', detail: 'Full-stack & UI/UX' },
 ]
 
@@ -47,10 +47,9 @@ export function StorySection() {
                 </p>
 
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  As Co-Founder and CMO of Ravenence Limited, I lead digital strategy and
-                  product development. We&rsquo;re based in Sylhet, Bangladesh, and help businesses
-                  scale with custom web applications, intelligent automation, and data-driven systems.
-                  Every project starts with a clear problem we&rsquo;re solving.
+                  As Co-Founder and CMO of Ravenence Limited, I lead digital strategy and product
+                  development. We help businesses scale with custom web applications, intelligent
+                  automation, and systems that actually drive results.
                 </p>
               </div>
 

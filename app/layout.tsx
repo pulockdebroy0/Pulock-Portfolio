@@ -93,7 +93,8 @@ export default function RootLayout({
       "email": "pulock@ravenence.com",
       "description": "Web developer, UI/UX architect, and Co-Founder & CMO at Ravenence Limited. Specializing in full-stack development, AI automation, and scalable growth systems.",
       "sameAs": [
-        "https://www.linkedin.com/in/pulock-deb-roy-833584218"
+        "https://www.linkedin.com/in/pulock-deb-roy-833584218",
+        "https://www.facebook.com/pulockdebroy.dip.9"
       ],
       "worksFor": {
         "@type": "Organization",

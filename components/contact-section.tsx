@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, type FormEvent, type ChangeEvent } from 'react';
-import { Mail, Phone, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, Linkedin, Facebook, Send } from 'lucide-react';
 import { toast } from 'sonner';
 import emailjs from '@emailjs/browser';
 
@@ -38,6 +38,7 @@ export default function ContactSection() {
     { icon: Mail, label: 'Email', value: contactInfo.email, href: `mailto:${contactInfo.email}` },
     { icon: Phone, label: 'WhatsApp', value: contactInfo.whatsapp, href: contactInfo.whatsapp_url },
     { icon: Linkedin, label: 'LinkedIn', value: contactInfo.linkedin_name, href: contactInfo.linkedin_url },
+    { icon: Facebook, label: 'Facebook', value: 'Pulock Deb Roy', href: 'https://www.facebook.com/pulockdebroy.dip.9' },
   ];
 
   function handleInputChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
