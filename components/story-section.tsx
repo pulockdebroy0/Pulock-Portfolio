@@ -94,13 +94,7 @@ export function StorySection() {
                   ))}
                 </div>
 
-                <h3 className="mt-9 text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-                  Currently working on
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Full-stack web applications, AI automation workflows, and growth
-                  infrastructure for Ravenence clients. Real products solving real problems.
-                </p>
+
               </div>
             </motion.div>
           </div>
