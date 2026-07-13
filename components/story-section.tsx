@@ -93,8 +93,6 @@ export function StorySection() {
                     </span>
                   ))}
                 </div>
-
-
               </div>
             </motion.div>
           </div>
