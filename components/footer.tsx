@@ -8,9 +8,9 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Mail, href: 'mailto:admin@pulockdebroy.live', label: 'Email' },
+  { icon: Mail, href: 'mailto:pulock@ravenence.com', label: 'Email' },
   { icon: Phone, href: 'https://wa.me/+8801739161076', label: 'WhatsApp' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/pulockdebroy', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/pulock-deb-roy-833584218', label: 'LinkedIn' },
 ];
 
 export default function Footer() {

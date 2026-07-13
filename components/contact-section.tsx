@@ -18,11 +18,11 @@ const inputClasses =
 
 export default function ContactSection() {
   const [contactInfo, setContactInfo] = useState<ContactInfo>({
-    email: 'admin@pulockdebroy.live',
+    email: 'pulock@ravenence.com',
     whatsapp: '+8801739161076',
     whatsapp_url: 'https://wa.me/8801739161076',
     linkedin_name: 'Pulock Deb Roy',
-    linkedin_url: 'https://linkedin.com/in/pulockdebroy',
+    linkedin_url: 'https://www.linkedin.com/in/pulock-deb-roy-833584218',
   });
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitting, setSubmitting] = useState(false);
@@ -94,11 +94,11 @@ export default function ContactSection() {
           {/* Left — invitation */}
           <div>
             <h2 className="font-display text-[clamp(2rem,3vw+1rem,3.25rem)] font-bold leading-[1.08] tracking-[-0.02em] text-foreground">
-              Let&rsquo;s work together.
+              Get in touch.
             </h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground">
-              Have a project in mind or want to collaborate? Reach out and
-              let&rsquo;s create something remarkable.
+              Got a project, question, or just want to say hello? Let&rsquo;s talk.
+              I typically respond within 24 hours.
             </p>
 
             <div className="mt-10 space-y-5">

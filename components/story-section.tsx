@@ -36,23 +36,21 @@ export function StorySection() {
               className="lg:col-span-7"
             >
               <h2 className="font-display text-[clamp(2rem,3vw+1rem,3.25rem)] font-bold leading-[1.08] tracking-[-0.02em] text-foreground">
-                The intersection of code and strategy.
+                Building products, not just features.
               </h2>
 
               <div className="mt-7 max-w-[60ch] space-y-5">
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  I&rsquo;m Pulock Deb Roy &mdash; a results-driven web developer, UI/UX
-                  architect, and technology strategist. I bridge complex backend
-                  engineering with clean, intentional visual design to build products
-                  that perform and convert.
+                  I&rsquo;m Pulock Deb Roy. For over five years, I&rsquo;ve worked on everything
+                  from full-stack Next.js applications to AI automation systems. What matters most is
+                  shipping solutions that actually work &mdash; clean code, intentional design, real impact.
                 </p>
 
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  As CMO of Ravenence Limited, a government-registered IT firm based in
-                  Sylhet, Bangladesh, I oversee digital growth strategies and
-                  infrastructure development. Ravenence specializes in AI automation,
-                  Next.js/React web applications, cross-platform mobile apps, CRM
-                  integration, and data analytics.
+                  As Co-Founder and CMO of Ravenence Limited, I lead digital strategy and
+                  product development. We&rsquo;re based in Sylhet, Bangladesh, and help businesses
+                  scale with custom web applications, intelligent automation, and data-driven systems.
+                  Every project starts with a clear problem we&rsquo;re solving.
                 </p>
               </div>
 
@@ -98,13 +96,11 @@ export function StorySection() {
                 </div>
 
                 <h3 className="mt-9 text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-                  Currently building
+                  Currently working on
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  AI automation systems and scalable web infrastructure for
-                  Ravenence&rsquo;s clients &mdash; from intelligent lead-qualification
-                  pipelines to full-stack SaaS platforms built on Next.js and
-                  PostgreSQL.
+                  Full-stack web applications, AI automation workflows, and growth
+                  infrastructure for Ravenence clients. Real products solving real problems.
                 </p>
               </div>
             </motion.div>

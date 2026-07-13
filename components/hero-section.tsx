@@ -40,24 +40,24 @@ export function HeroSection() {
                 {...reveal(0)}
                 className="font-mono text-xs uppercase tracking-[0.18em] text-primary"
               >
-                CMO · Ravenence Limited
+                Co-Founder & CMO · Ravenence Limited
               </motion.p>
 
               <motion.h1
                 {...reveal(1)}
                 className="mt-5 font-display text-[clamp(2.75rem,5vw+1rem,5.25rem)] font-bold leading-[1.04] tracking-[-0.03em] text-foreground"
               >
-                Building systems that{' '}
-                <span className="text-primary">scale businesses.</span>
+                Full-stack builder focused on{' '}
+                <span className="text-primary">real results.</span>
               </motion.h1>
 
               <motion.p
                 {...reveal(2)}
                 className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground"
               >
-                Web developer, UI/UX designer, and CMO focused on AI automation,
-                growth systems, and high-converting digital products that drive
-                measurable results.
+                Web developer and digital architect. I build scalable products,
+                design intentional systems, and drive measurable growth for
+                Ravenence Limited clients through strategy and code.
               </motion.p>
 
               <motion.div {...reveal(3)} className="mt-8 flex flex-wrap items-center gap-5">
