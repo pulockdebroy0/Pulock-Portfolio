@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin } from 'lucide-react';
+import { Mail, Phone, Linkedin, Facebook } from 'lucide-react';
 
 const navLinks = [
   { label: 'Story', href: '#story' },
@@ -8,9 +8,10 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Mail, href: 'mailto:admin@pulockdebroy.live', label: 'Email' },
+  { icon: Mail, href: 'mailto:pulock@ravenence.com', label: 'Email' },
   { icon: Phone, href: 'https://wa.me/+8801739161076', label: 'WhatsApp' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/pulockdebroy', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/pulock-deb-roy-833584218', label: 'LinkedIn' },
+  { icon: Facebook, href: 'https://www.facebook.com/pulockdebroy.dip.9', label: 'Facebook' },
 ];
 
 export default function Footer() {

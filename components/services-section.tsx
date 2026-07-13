@@ -7,14 +7,14 @@ const easeOut = [0.16, 1, 0.3, 1] as const
 
 const featured = {
   icon: Cpu,
-  title: 'AI Automation & CRM',
+  title: 'AI Automation Systems',
   description:
-    "Custom automation that does the repetitive work so your team doesn't have to — built around your existing tools and pipelines.",
+    'Intelligent automation that handles the work your team shouldn\'t have to. Custom pipelines, AI-powered workflows, and integration with your existing tools.',
   deliverables: [
-    'Custom automation pipelines',
-    'Lead-qualification funnels',
-    '24/7 AI support agents',
-    'Automated email campaigns',
+    'Custom automation workflows',
+    'AI-powered lead qualification',
+    'Intelligent document processing',
+    'CRM and email integration',
   ],
 }
 
@@ -23,25 +23,25 @@ const services = [
     icon: Terminal,
     title: 'Web Development',
     description:
-      'Lightning-fast, SEO-optimized React & Next.js applications with robust PostgreSQL backends and serverless APIs.',
+      'Full-stack applications built with Next.js and React. Fast, scalable, SEO-optimized. PostgreSQL databases, serverless architecture, and clean code.',
   },
   {
     icon: Smartphone,
     title: 'App Development',
     description:
-      'Cross-platform mobile applications built with React Native — smooth, native-feel experiences on iOS and Android.',
+      'Cross-platform mobile apps that work. Built with React Native for consistent behavior across iOS and Android without compromise.',
   },
   {
     icon: Palette,
-    title: 'UI/UX & Brand Strategy',
+    title: 'UI/UX Design',
     description:
-      'High-converting wireframes, responsive designs, and cohesive design systems for polished user experiences.',
+      'Interface design that drives conversion. From wireframes to design systems, focused on user needs and business outcomes.',
   },
   {
     icon: Box,
-    title: '3D Animation',
+    title: '3D & Motion',
     description:
-      'Immersive 3D visuals, motion graphics, and interactive animations that bring your brand and products to life.',
+      'Interactive 3D experiences and motion graphics. Using Three.js and Framer Motion to add depth and polish to digital products.',
   },
 ]
 
@@ -63,11 +63,11 @@ export function ServicesSection() {
             className="max-w-2xl"
           >
             <h2 className="font-display text-[clamp(2rem,3vw+1rem,3.25rem)] font-bold leading-[1.08] tracking-[-0.02em] text-foreground">
-              What I bring to the table.
+              Services and capabilities.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              End-to-end digital solutions &mdash; from strategy and design to
-              development and deployment.
+              Strategy, design, and development. I deliver complete solutions,
+              whether it&rsquo;s a website rebuild or an AI-powered system.
             </p>
           </motion.div>
 

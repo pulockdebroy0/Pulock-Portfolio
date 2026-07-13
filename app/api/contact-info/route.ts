@@ -3,22 +3,22 @@ import sql from '@/lib/db'
 import { getCurrentUser } from '@/lib/auth'
 
 const defaults = {
-  email: 'admin@pulockdebroy.live',
+  email: 'pulock@ravenence.com',
   whatsapp: '+8801739161076',
   whatsapp_url: 'https://wa.me/8801739161076',
   linkedin_name: 'Pulock Deb Roy',
-  linkedin_url: 'https://linkedin.com/in/pulockdebroy',
+  linkedin_url: 'https://www.linkedin.com/in/pulock-deb-roy-833584218',
 }
 
 async function ensureTable() {
   await sql`
     CREATE TABLE IF NOT EXISTS contact_info (
       id           SERIAL PRIMARY KEY,
-      email        VARCHAR(255) NOT NULL DEFAULT 'admin@pulockdebroy.live',
+      email        VARCHAR(255) NOT NULL DEFAULT 'pulock@ravenence.com',
       whatsapp     VARCHAR(50)  NOT NULL DEFAULT '+8801739161076',
       whatsapp_url VARCHAR(255) NOT NULL DEFAULT 'https://wa.me/8801739161076',
       linkedin_name VARCHAR(255) NOT NULL DEFAULT 'Pulock Deb Roy',
-      linkedin_url  VARCHAR(255) NOT NULL DEFAULT 'https://linkedin.com/in/pulockdebroy',
+      linkedin_url  VARCHAR(255) NOT NULL DEFAULT 'https://www.linkedin.com/in/pulock-deb-roy-833584218',
       updated_at   TIMESTAMPTZ DEFAULT NOW()
     )
   `

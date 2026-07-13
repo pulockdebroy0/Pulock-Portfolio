@@ -14,26 +14,45 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pulockdebroy.live'),
-  title: 'Pulock Deb Roy — CMO of Ravenence Limited',
-  description: 'Pulock Deb Roy — CMO of Ravenence Limited. Specializing in web development, app development, UI/UX design, 3D animation, and AI automation solutions.',
-  keywords: ['CMO', 'Ravenence Limited', 'web development', 'app development', 'UI/UX design', '3D animation', 'AI automation', 'portfolio', 'Pulock Deb Roy'],
+  metadataBase: new URL('https://pulockdebroy.com'),
+  title: 'Pulock Deb Roy — Co-Founder & CMO at Ravenence Limited',
+  description: 'Pulock Deb Roy, Co-Founder & CMO at Ravenence Limited. Web developer and digital architect specializing in full-stack development, AI automation, and scalable growth systems.',
+  keywords: ['Co-Founder', 'CMO', 'Ravenence Limited', 'web developer', 'UI/UX design', 'AI automation', 'Next.js', 'React', 'full-stack development', 'portfolio'],
+  authors: [{ name: 'Pulock Deb Roy', url: 'https://pulockdebroy.com' }],
+  creator: 'Pulock Deb Roy',
+  publisher: 'Pulock Deb Roy',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: 'https://pulockdebroy.com',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  },
   openGraph: {
-    title: 'Pulock Deb Roy — CMO of Ravenence Limited',
-    description: 'CMO of Ravenence Limited. Web development, app development, UI/UX design, 3D animation, and AI automation.',
+    title: 'Pulock Deb Roy — Co-Founder & CMO at Ravenence Limited',
+    description: 'Web developer, UI/UX architect, and Co-Founder & CMO at Ravenence Limited. Building scalable digital products and growth systems.',
     type: 'website',
+    url: 'https://pulockdebroy.com',
     images: [
       {
-        url: '/Pulock.jpeg',
+        url: 'https://pulockdebroy.com/Pulock.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Pulock Deb Roy',
+        alt: 'Pulock Deb Roy - Co-Founder & CMO at Ravenence Limited',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/Pulock.jpeg'],
+    creator: '@pulockdebroy',
+    images: ['https://pulockdebroy.com/Pulock.jpeg'],
   },
   icons: {
     icon: [
@@ -44,6 +63,17 @@ export const metadata: Metadata = {
     ],
     apple: '/Pulock.jpeg',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
 }
 
 export default function RootLayout({
@@ -51,38 +81,62 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Pulock Deb Roy",
-    "jobTitle": "Chief Marketing Officer (CMO)",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Ravenence Limited",
-      "url": "https://ravenence.com"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://pulockdebroy.com",
+      "name": "Pulock Deb Roy",
+      "jobTitle": "Co-Founder & Chief Marketing Officer",
+      "url": "https://pulockdebroy.com",
+      "image": "https://pulockdebroy.com/Pulock.jpeg",
+      "email": "pulock@ravenence.com",
+      "description": "Web developer, UI/UX architect, and Co-Founder & CMO at Ravenence Limited. Specializing in full-stack development, AI automation, and scalable growth systems.",
+      "sameAs": [
+        "https://www.linkedin.com/in/pulock-deb-roy-833584218",
+        "https://www.facebook.com/pulockdebroy.dip.9"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ravenence Limited",
+        "url": "https://ravenence.com"
+      },
+      "knowsAbout": [
+        "Full-Stack Web Development",
+        "React & Next.js",
+        "UI/UX Design & Brand Strategy",
+        "AI Automation Systems",
+        "PostgreSQL & Database Architecture",
+        "CRM Integration",
+        "Growth Systems",
+        "Digital Strategy"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sylhet",
+        "addressRegion": "Sylhet",
+        "addressCountry": "BD"
+      }
     },
-    "url": "https://pulockdebroy.live",
-    "image": "https://pulockdebroy.live/Pulock.jpeg",
-    "description": "Experienced Web Developer, UI/UX Architect, and Chief Marketing Officer (CMO) of Ravenence Limited specializing in AI automation, digital infrastructure, and full-stack solutions.",
-    "sameAs": [
-      "https://linkedin.com/in/pulockdebroy",
-      "https://wa.me/+8801739161076"
-    ],
-    "knowsAbout": [
-      "Web Development",
-      "UI/UX Design",
-      "AI Automation",
-      "CRM & Email Marketing",
-      "Next.js",
-      "React",
-      "PostgreSQL"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Sylhet",
-      "addressCountry": "Bangladesh"
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pulock Deb Roy",
+      "url": "https://pulockdebroy.com",
+      "creator": {
+        "@type": "Person",
+        "name": "Pulock Deb Roy"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://pulockdebroy.com"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
-  }
+  ]
 
   return (
     <html lang="en">
