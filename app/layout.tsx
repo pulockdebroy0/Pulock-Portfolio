@@ -16,7 +16,7 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   metadataBase: new URL('https://pulockdebroy.com'),
   title: 'Pulock Deb Roy | Co-Founder & CMO | Full-Stack Web Developer',
-  description: 'Pulock Deb Roy - Co-Founder & CMO at Ravenence Limited. Full-stack web developer building scalable digital products, AI automation systems, and growth infrastructure. Specializes in Next.js, React, and database architecture.',
+  description: 'Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.',
   keywords: [
     'web developer',
     'full-stack development',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Pulock Deb Roy | Co-Founder & CMO | Full-Stack Developer',
-    description: 'Full-stack web developer and digital architect. Building scalable products and AI automation systems at Ravenence Limited.',
+    description: 'Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.',
     type: 'website',
     url: 'https://pulockdebroy.com',
     siteName: 'Pulock Deb Roy',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     site: '@pulockdebroy',
     images: ['https://pulockdebroy.com/Pulock.jpeg'],
     title: 'Pulock Deb Roy | Full-Stack Developer & CMO',
-    description: 'Co-Founder & CMO at Ravenence Limited. Building scalable web products.',
+    description: 'Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.',
   },
   icons: {
     icon: [
@@ -131,7 +131,7 @@ export default function RootLayout({
       "telephone": "+88-01739-161076",
       "givenName": "Pulock",
       "familyName": "Deb Roy",
-      "description": "Full-stack web developer and digital architect. Co-Founder & CMO at Ravenence Limited. Specializing in Next.js, React, AI automation systems, and scalable digital products.",
+      "description": "Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.",
       "sameAs": [
         "https://www.linkedin.com/in/pulock-deb-roy-833584218",
         "https://www.facebook.com/pulockdebroy.dip.9",
@@ -188,7 +188,7 @@ export default function RootLayout({
       "@type": "WebSite",
       "@id": "https://pulockdebroy.com",
       "name": "Pulock Deb Roy - Full-Stack Web Developer",
-      "description": "Portfolio and professional profile of Pulock Deb Roy, Co-Founder & CMO at Ravenence Limited",
+      "description": "Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.",
       "url": "https://pulockdebroy.com",
       "creator": {
         "@type": "Person",
@@ -213,7 +213,7 @@ export default function RootLayout({
       "@type": "WebPage",
       "@id": "https://pulockdebroy.com",
       "name": "Pulock Deb Roy | Co-Founder & CMO | Full-Stack Developer",
-      "description": "Portfolio page of Pulock Deb Roy featuring full-stack development, AI automation, and digital product work.",
+      "description": "Pulock Deb Roy is the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he is also a researcher specializing in artificial intelligence, AI automation, digital marketing, UI/UX design, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable business growth through technology, research, and data-driven marketing.",
       "url": "https://pulockdebroy.com",
       "author": {
         "@type": "Person",
