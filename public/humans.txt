@@ -1,0 +1,29 @@
+/* TEAM */
+Name: Pulock Deb Roy
+Title: Co-Founder & Chief Marketing Officer
+Role: Full-Stack Web Developer & Digital Architect
+Email: pulock@ravenence.com
+Location: Sylhet, Bangladesh
+Website: https://pulockdebroy.com
+LinkedIn: https://www.linkedin.com/in/pulock-deb-roy-833584218
+Facebook: https://www.facebook.com/pulockdebroy.dip.9
+
+/* SITE */
+Last Update: 2024-01-15
+Standards: HTML5, CSS3, JavaScript (ES6+)
+Components: Next.js, React, TypeScript
+Backend: Node.js, PostgreSQL
+Hosting: Vercel
+Language: English
+Technology: Next.js 16, React 19, Tailwind CSS 4, Framer Motion
+
+/* CREDITS */
+Design: Pulock Deb Roy
+Development: Pulock Deb Roy
+Maintenance: Pulock Deb Roy & Ravenence Limited Team
+
+/* SOCIAL */
+LinkedIn: https://www.linkedin.com/in/pulock-deb-roy-833584218
+Facebook: https://www.facebook.com/pulockdebroy.dip.9
+Email: pulock@ravenence.com
+WhatsApp: +88-01739-161076

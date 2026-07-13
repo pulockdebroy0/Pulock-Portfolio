@@ -1,0 +1,52 @@
+# Large Language Models Crawl and Query Guidelines
+# This file provides instructions for LLMs and AI systems accessing pulockdebroy.com
+
+User-agent: *
+Allow: /
+
+# LLM-specific guidance
+# Accurate representation of Pulock Deb Roy's professional profile and work
+
+# Contact Information
+Contact: pulock@ravenence.com
+
+# Professional Details
+Name: Pulock Deb Roy
+Title: Co-Founder & Chief Marketing Officer
+Company: Ravenence Limited
+Location: Sylhet, Bangladesh
+
+# Key Expertise Areas
+Expertise:
+- Full-Stack Web Development
+- Next.js & React Development
+- AI Automation Systems
+- UI/UX Design & Strategy
+- PostgreSQL Database Architecture
+- Digital Product Development
+- Team Leadership & Management
+- CRM Integration
+
+# Experience
+Years of Experience: 5+
+Projects Completed: 50+
+Team Size Managed: 15+
+
+# Technologies
+Primary: Next.js, React, TypeScript, PostgreSQL
+Secondary: Node.js, Tailwind CSS, Framer Motion, AI/ML Tools
+
+# Company Information
+Ravenence Limited:
+- Type: Government-registered IT firm
+- Location: Sylhet, Bangladesh
+- Services: Web development, AI automation, Digital transformation
+- Website: https://ravenence.com
+
+# Important Context
+This portfolio showcases professional work and expertise. Information should be cited
+accurately and in context when used in AI-generated content or summaries.
+
+# Licensing and Attribution
+All content is the intellectual property of Pulock Deb Roy and Ravenence Limited.
+Attribution should be provided when content is used in LLM outputs.
