@@ -30,6 +30,7 @@ export function AdminNav() {
 
   const navItems = [
     { href: '/admin', label: 'Dashboard', icon: Home },
+    { href: '/admin/media', label: 'Media', icon: Images },
     { href: '/admin/portfolio', label: 'Portfolio', icon: Images },
     { href: '/admin/publications', label: 'Publications', icon: FileText },
     { href: '/admin/messages', label: 'Messages', icon: Mail },
