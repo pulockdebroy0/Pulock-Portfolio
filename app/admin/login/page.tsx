@@ -136,7 +136,7 @@ export default function LoginPage() {
 
         <form
           onSubmit={mode === 'setup' ? handleSetup : handleLogin}
-          className="space-y-4 bg-card p-8 rounded-lg shadow-md"
+          className="space-y-6 bg-card p-8 rounded-lg shadow-md border border-border"
         >
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
@@ -149,7 +149,7 @@ export default function LoginPage() {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="admin@example.com"
-              className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
               disabled={submitting}
             />
           </div>
@@ -165,7 +165,7 @@ export default function LoginPage() {
               value={formData.password}
               onChange={handleInputChange}
               placeholder="••••••••"
-              className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
               disabled={submitting}
             />
             {mode === 'setup' && (
@@ -176,7 +176,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={submitting}
-            className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full px-4 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {submitting
               ? mode === 'setup'
@@ -186,6 +186,39 @@ export default function LoginPage() {
                 ? 'Create Account'
                 : 'Login'}
           </button>
+
+          {mode === 'login' && (
+            <div className="pt-4 border-t border-border">
+              <p className="text-center text-sm text-foreground/60 mb-3">
+                No account yet?
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  setMode('setup')
+                  setFormData({ email: '', password: '' })
+                }}
+                className="w-full px-4 py-2 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
+              >
+                Create Admin Account
+              </button>
+            </div>
+          )}
+
+          {mode === 'setup' && (
+            <div className="pt-4 border-t border-border">
+              <button
+                type="button"
+                onClick={() => {
+                  setMode('login')
+                  setFormData({ email: '', password: '' })
+                }}
+                className="w-full text-center text-sm text-primary hover:text-primary/80 transition-colors"
+              >
+                Back to Login
+              </button>
+            </div>
+          )}
         </form>
       </div>
     </div>
