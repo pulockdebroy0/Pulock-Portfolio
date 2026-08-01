@@ -33,6 +33,16 @@ export interface Message {
   createdAt: Date
 }
 
+export interface Media {
+  id: string
+  title: string
+  description: string
+  imageUrl: string
+  featured: boolean
+  createdAt: Date
+  updatedAt: Date
+}
+
 export interface AdminUser {
   id: string
   email: string
