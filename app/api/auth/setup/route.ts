@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
-import { hashPassword } from '@/lib/auth'
+import { hashPassword, generateToken } from '@/lib/auth'
 
 export async function POST(request: NextRequest) {
   try {
@@ -41,13 +41,29 @@ export async function POST(request: NextRequest) {
       RETURNING id, email
     `
 
-    return NextResponse.json(
+    // Generate token
+    const token = generateToken()
+
+    const response = NextResponse.json(
       {
         message: 'Admin user created successfully',
         user: result[0],
+        token,
       },
       { status: 201 }
     )
+
+    // Set secure HTTP-only cookie
+    response.cookies.set({
+      name: 'admin_token',
+      value: token,
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      maxAge: 7 * 24 * 60 * 60, // 7 days
+    })
+
+    return response
   } catch (error) {
     console.error('[v0] Admin setup error:', error)
     return NextResponse.json({ error: 'Failed to setup admin user' }, { status: 500 })
