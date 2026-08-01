@@ -14,10 +14,15 @@ export function AdminNav() {
   const handleLogout = async () => {
     setLoading(true)
     try {
-      // Clear the auth token from localStorage
-      localStorage.removeItem('admin_token')
-      // Clear the cookie
-      document.cookie = 'admin_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;'
+      // Call logout API endpoint
+      const response = await fetch('/api/auth/logout', {
+        method: 'POST',
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to logout')
+      }
+
       toast.success('Logged out successfully')
       router.push('/admin/login')
     } catch (error) {
