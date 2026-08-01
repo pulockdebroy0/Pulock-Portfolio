@@ -1,9 +1,18 @@
 import { neon } from '@neondatabase/serverless'
 
-if (!process.env.DATABASE_URL) {
-  throw new Error('DATABASE_URL environment variable is not set')
+let sql: any = null
+
+function initializeDB() {
+  if (sql) return sql
+  
+  const dbUrl = process.env.DATABASE_URL
+  if (!dbUrl) {
+    // Return a mock for build time
+    return () => Promise.resolve([])
+  }
+  
+  sql = neon(dbUrl)
+  return sql
 }
 
-const sql = neon(process.env.DATABASE_URL)
-
-export default sql
+export default initializeDB()
