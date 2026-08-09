@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { Trash2, Edit2, Plus, Upload } from 'lucide-react'
 import { toast } from 'sonner'
 import type { Media } from '@/lib/types'
@@ -17,6 +18,7 @@ export default function MediaManagementPage() {
     title: '',
     description: '',
     imageUrl: '',
+    altText: '',
     featured: false,
   })
 
@@ -127,6 +129,7 @@ export default function MediaManagementPage() {
       title: item.title,
       description: item.description,
       imageUrl: item.imageUrl,
+      altText: item.altText || item.title,
       featured: item.featured,
     })
     setEditingId(item.id)
@@ -158,6 +161,7 @@ export default function MediaManagementPage() {
       title: '',
       description: '',
       imageUrl: '',
+      altText: '',
       featured: false,
     })
     setEditingId(null)
@@ -243,6 +247,19 @@ export default function MediaManagementPage() {
               )}
             </div>
 
+            <div>
+              <label className="mb-2 block text-sm font-medium text-foreground">Image alt text *</label>
+              <input
+                type="text"
+                name="altText"
+                value={formData.altText}
+                onChange={handleInputChange}
+                placeholder="Describe the image for accessibility and search"
+                className="w-full rounded-lg border border-border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
+            </div>
+
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -286,6 +303,7 @@ export default function MediaManagementPage() {
               <div className="p-4">
                 <h3 className="text-lg font-bold text-foreground mb-1">{item.title}</h3>
                 <p className="text-sm text-foreground/60 mb-2 line-clamp-2">{item.description}</p>
+                {item.slug && <Link href={`/media/${item.slug}`} target="_blank" className="mb-2 block truncate text-xs text-primary underline-offset-4 hover:underline">/media/{item.slug}</Link>}
                 {item.featured && <span className="inline-block px-2 py-1 bg-accent/20 text-accent text-xs rounded mb-2">Featured</span>}
                 <div className="flex gap-2">
                   <button
