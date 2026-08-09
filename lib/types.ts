@@ -39,6 +39,7 @@ export interface Media {
   description: string
   imageUrl: string
   altText?: string
+  slug: string
   featured: boolean
   createdAt: Date
   updatedAt: Date

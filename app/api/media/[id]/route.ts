@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
+import { createUniqueMediaSlug } from '@/lib/media-slug'
 
 export async function PUT(
   request: NextRequest,
@@ -17,11 +18,12 @@ export async function PUT(
       )
     }
 
+    const slug = await createUniqueMediaSlug(title, id)
     const result = await sql`
       UPDATE media
-      SET title = ${title}, description = ${description || ''}, image_url = ${imageUrl}, alt_text = ${altText || title}, featured = ${featured || false}, updated_at = NOW()
+      SET title = ${title}, description = ${description || ''}, image_url = ${imageUrl}, alt_text = ${altText || title}, slug = ${slug}, featured = ${featured || false}, updated_at = NOW()
       WHERE id = ${id}
-      RETURNING id, title, description, image_url as "imageUrl", alt_text as "altText", featured, created_at as "createdAt", updated_at as "updatedAt"
+      RETURNING id, title, description, image_url as "imageUrl", alt_text as "altText", slug, featured, created_at as "createdAt", updated_at as "updatedAt"
     `
 
     if (result.length === 0) {
