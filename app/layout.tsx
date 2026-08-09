@@ -14,7 +14,7 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pulockdebroy.com'),
+  metadataBase: new URL('https://pulockdebroy.com/'),
   title: 'Pulock Deb Roy | Co-Founder & CMO | Full-Stack Web Developer',
   description: 'Pulock Deb Roy is the Co-Founder & CMO of Ravenence Limited, specializing in AI automation, full-stack web development, UI/UX design, and digital transformation.',
   keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'Bangladesh',
     'Sylhet'
   ],
-  authors: [{ name: 'Pulock Deb Roy', url: 'https://pulockdebroy.com' }],
+  authors: [{ name: 'Pulock Deb Roy', url: 'https://pulockdebroy.com/' }],
   creator: 'Pulock Deb Roy',
   publisher: 'Pulock Deb Roy',
   formatDetection: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://pulockdebroy.com',
+    canonical: 'https://pulockdebroy.com/',
   },
   viewport: {
     width: 'device-width',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: 'Pulock Deb Roy | Co-Founder & CMO | Full-Stack Developer',
     description: 'Pulock Deb Roy is the Co-Founder & CMO of Ravenence Limited, specializing in AI automation, full-stack web development, UI/UX design, and digital transformation.',
     type: 'website',
-    url: 'https://pulockdebroy.com',
+    url: 'https://pulockdebroy.com/',
     siteName: 'Pulock Deb Roy',
     locale: 'en_US',
     images: [
@@ -126,10 +126,10 @@ export default function RootLayout({
           "Pulock Kumar Deb Roy"
         ],
         "jobTitle": "Co-Founder & Chief Marketing Officer",
-        "url": "https://pulockdebroy.com",
+        "url": "https://pulockdebroy.com/",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://pulockdebroy.com"
+          "@id": "https://pulockdebroy.com/"
         },
         "image": {
           "@type": "ImageObject",
@@ -153,7 +153,7 @@ export default function RootLayout({
         "sameAs": [
           "https://www.linkedin.com/in/pulock-deb-roy-833584218",
           "https://www.facebook.com/pulockdebroy.dip.9",
-          "https://pulockdebroy.com"
+          "https://pulockdebroy.com/"
         ],
         "worksFor": {
           "@id": "https://ravenence.com/#organization"
@@ -226,7 +226,7 @@ export default function RootLayout({
         "@id": "https://pulockdebroy.com/#website",
         "name": "Pulock Deb Roy - Full-Stack Web Developer",
         "description": "Pulock Deb Roy is the Co-Founder & CMO of Ravenence Limited, specializing in AI automation, full-stack web development, UI/UX design, and digital transformation.",
-        "url": "https://pulockdebroy.com",
+        "url": "https://pulockdebroy.com/",
         "publisher": {
           "@id": "https://pulockdebroy.com/#person"
         },
@@ -234,7 +234,7 @@ export default function RootLayout({
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://pulockdebroy.com?q={search_term_string}"
+            "urlTemplate": "https://pulockdebroy.com/?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         },
@@ -244,10 +244,10 @@ export default function RootLayout({
       },
       {
         "@type": "WebPage",
-        "@id": "https://pulockdebroy.com",
+        "@id": "https://pulockdebroy.com/",
         "name": "Pulock Deb Roy | Co-Founder & CMO | Full-Stack Developer",
         "description": "Pulock Deb Roy is the Co-Founder & CMO of Ravenence Limited, specializing in AI automation, full-stack web development, UI/UX design, and digital transformation.",
-        "url": "https://pulockdebroy.com",
+        "url": "https://pulockdebroy.com/",
         "author": {
           "@id": "https://pulockdebroy.com/#person"
         },
@@ -256,6 +256,9 @@ export default function RootLayout({
         "inLanguage": "en-US",
         "isPartOf": {
           "@id": "https://pulockdebroy.com/#website"
+        },
+        "mainEntity": {
+          "@id": "https://pulockdebroy.com/#person"
         },
         "speakable": {
           "@type": "SpeakableSpecification",
@@ -275,31 +278,31 @@ export default function RootLayout({
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://pulockdebroy.com"
+            "item": "https://pulockdebroy.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "About",
-            "item": "https://pulockdebroy.com#story"
+            "item": "https://pulockdebroy.com/#story"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Services",
-            "item": "https://pulockdebroy.com#services"
+            "item": "https://pulockdebroy.com/#services"
           },
           {
             "@type": "ListItem",
             "position": 4,
             "name": "Portfolio",
-            "item": "https://pulockdebroy.com#portfolio"
+            "item": "https://pulockdebroy.com/#portfolio"
           },
           {
             "@type": "ListItem",
             "position": 5,
             "name": "Contact",
-            "item": "https://pulockdebroy.com#contact"
+            "item": "https://pulockdebroy.com/#contact"
           }
         ]
       },
@@ -307,8 +310,8 @@ export default function RootLayout({
         "@type": "ProfilePage",
         "@id": "https://pulockdebroy.com/#profilepage",
         "name": "Pulock Deb Roy",
-        "url": "https://pulockdebroy.com",
-        "describedBy": {
+        "url": "https://pulockdebroy.com/",
+        "mainEntity": {
           "@id": "https://pulockdebroy.com/#person"
         }
       },
