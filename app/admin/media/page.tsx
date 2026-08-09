@@ -160,6 +160,7 @@ export default function MediaManagementPage() {
       title: '',
       description: '',
       imageUrl: '',
+      altText: '',
       featured: false,
     })
     setEditingId(null)

@@ -1,3 +1,4 @@
+import { put } from '@vercel/blob'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest) {
@@ -9,20 +10,20 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No file provided' }, { status: 400 })
     }
 
-    // Convert file to base64 for demonstration
-    const bytes = await file.arrayBuffer()
-    const buffer = Buffer.from(bytes)
-    const base64 = buffer.toString('base64')
-    const dataUrl = `data:${file.type};base64,${base64}`
+    if (!file.type.startsWith('image/')) {
+      return NextResponse.json({ error: 'Only image files are allowed' }, { status: 400 })
+    }
 
-    // In production, you'd upload to a proper storage service
-    // For now, we'll store a reference and use the data URL
-    const timestamp = Date.now()
-    const filename = `${timestamp}-${file.name}`
+    const filename = `media/${Date.now()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, '-')}`
+    const blob = await put(filename, file, {
+      access: 'public',
+      addRandomSuffix: true,
+      contentType: file.type,
+    })
 
     return NextResponse.json({
-      url: dataUrl,
-      filename,
+      url: blob.url,
+      filename: blob.pathname,
       size: file.size,
     })
   } catch (error) {
