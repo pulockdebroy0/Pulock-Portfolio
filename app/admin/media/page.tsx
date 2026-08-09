@@ -17,6 +17,7 @@ export default function MediaManagementPage() {
     title: '',
     description: '',
     imageUrl: '',
+    altText: '',
     featured: false,
   })
 
@@ -127,6 +128,7 @@ export default function MediaManagementPage() {
       title: item.title,
       description: item.description,
       imageUrl: item.imageUrl,
+      altText: item.altText || item.title,
       featured: item.featured,
     })
     setEditingId(item.id)
@@ -241,6 +243,19 @@ export default function MediaManagementPage() {
                   <img src={formData.imageUrl} alt="Preview" className="w-32 h-32 object-cover rounded-lg" />
                 </div>
               )}
+            </div>
+
+            <div>
+              <label className="mb-2 block text-sm font-medium text-foreground">Image alt text *</label>
+              <input
+                type="text"
+                name="altText"
+                value={formData.altText}
+                onChange={handleInputChange}
+                placeholder="Describe the image for accessibility and search"
+                className="w-full rounded-lg border border-border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
             </div>
 
             <div className="flex items-center gap-2">

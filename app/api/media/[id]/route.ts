@@ -3,12 +3,12 @@ import sql from '@/lib/db'
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const data = await request.json()
-    const { title, description, imageUrl, featured } = data
-    const { id } = params
+    const { title, description, imageUrl, altText, featured } = data
+    const { id } = await params
 
     if (!title || !imageUrl) {
       return NextResponse.json(
@@ -19,9 +19,9 @@ export async function PUT(
 
     const result = await sql`
       UPDATE media
-      SET title = ${title}, description = ${description || ''}, image_url = ${imageUrl}, featured = ${featured || false}, updated_at = NOW()
+      SET title = ${title}, description = ${description || ''}, image_url = ${imageUrl}, alt_text = ${altText || title}, featured = ${featured || false}, updated_at = NOW()
       WHERE id = ${id}
-      RETURNING id, title, description, image_url as "imageUrl", featured, created_at as "createdAt", updated_at as "updatedAt"
+      RETURNING id, title, description, image_url as "imageUrl", alt_text as "altText", featured, created_at as "createdAt", updated_at as "updatedAt"
     `
 
     if (result.length === 0) {
@@ -37,10 +37,10 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
+    const { id } = await params
 
     const result = await sql`
       DELETE FROM media
