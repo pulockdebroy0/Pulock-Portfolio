@@ -59,25 +59,29 @@ export default function ContactSection() {
       if (!res.ok) throw new Error('Failed to save message');
 
       // Send email via EmailJS
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-      if (serviceId && templateId && publicKey) {
-        await emailjs.send(
-          serviceId,
-          templateId,
-          {
-            from_name: formData.name,
-            from_email: formData.email,
-            message: formData.message,
-            to_name: 'Pulock',
-          },
-          publicKey
-        );
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('Email delivery is not configured');
       }
 
-      toast.success("Message sent — I'll reply within a day.");
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          reply_to: formData.email,
+          message: formData.message,
+          to_name: 'Pulock',
+          to_email: 'pulockkumardeb02@gmail.com',
+        },
+        publicKey
+      );
+
+      toast.success('Your message has been sent successfully.');
       setFormData({ name: '', email: '', message: '' });
     } catch {
       toast.error("The message didn't send. Check your connection and try again.");
