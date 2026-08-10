@@ -5,6 +5,7 @@ import AboutSection from '@/components/about-section'
 import { ServicesSection } from '@/components/services-section'
 import { PortfolioSection } from '@/components/portfolio-section'
 import PublicationsSection from '@/components/publications-section'
+import { LifeActivitiesSection } from '@/components/life-activities-section'
 import FAQSection from '@/components/faq-section'
 import ContactSection from '@/components/contact-section'
 import Footer from '@/components/footer'
@@ -21,6 +22,7 @@ export default function Home() {
       <ServicesSection />
       <PortfolioSection />
       <PublicationsSection />
+      <LifeActivitiesSection />
       <FAQSection />
       <ContactSection />
       <Footer />
