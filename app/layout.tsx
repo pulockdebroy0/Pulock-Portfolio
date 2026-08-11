@@ -252,7 +252,7 @@ export default function RootLayout({
           "@id": "https://pulockdebroy.com/#person"
         },
         "datePublished": "2024-01-01",
-        "dateModified": new Date().toISOString().split('T')[0],
+        "dateModified": "2026-08-10T10:31:21Z",
         "inLanguage": "en-US",
         "isPartOf": {
           "@id": "https://pulockdebroy.com/#website"
