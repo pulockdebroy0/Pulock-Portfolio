@@ -230,14 +230,6 @@ export default function RootLayout({
         "publisher": {
           "@id": "https://pulockdebroy.com/#person"
         },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://pulockdebroy.com/?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        },
         "mainEntity": {
           "@id": "https://pulockdebroy.com/#person"
         }

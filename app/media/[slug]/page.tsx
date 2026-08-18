@@ -54,9 +54,13 @@ export default async function MediaDetailPage({ params }: Props) {
     name: media.title,
     description,
     caption: media.title,
-    creator: { '@id': `${siteUrl}/#person`, '@type': 'Person', name: 'Pulock Deb Roy', url: `${siteUrl}/` },
-    copyrightHolder: { '@id': `${siteUrl}/#person`, '@type': 'Person', name: 'Pulock Deb Roy' },
+    creator: { '@id': `${siteUrl}/#person` },
+    copyrightHolder: { '@id': `${siteUrl}/#person` },
+    creditText: 'Pulock Deb Roy',
     copyrightNotice,
+    acquireLicensePage: `${siteUrl}/license/`,
+    license: `${siteUrl}/license/`,
+    mainEntityOfPage: { '@id': url },
   }
   const pageObject = { '@context': 'https://schema.org', '@graph': [imageObject, { '@type': 'ImageGallery', '@id': `${url}#page`, url, name: media.title, image: { '@id': `${url}#image` }, mainEntity: { '@id': `${url}#image` }, author: { '@id': `${siteUrl}/#person` } }] }
 
