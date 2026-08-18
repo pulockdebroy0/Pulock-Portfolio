@@ -17,6 +17,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/license/`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
   ]
 
   const media = await sql`SELECT slug, updated_at as "updatedAt" FROM media WHERE slug IS NOT NULL AND slug <> ''` as unknown as Array<{ slug: string; updatedAt: Date }>
