@@ -42,7 +42,7 @@ export function LifeActivitiesSection() {
             A journey built around useful momentum.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            A journey across technology, entrepreneurship, research, growth, and digital transformation.
+            A journey across technology entrepreneurship, research, growth, and digital transformation.
           </p>
         </header>
 
