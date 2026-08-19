@@ -40,7 +40,7 @@ export function HeroSection() {
                 {...reveal(0)}
                 className="font-mono text-xs uppercase tracking-[0.18em] text-primary"
               >
-                Co-Founder & CMO · Ravenence Limited
+                Technology Entrepreneur · Co-Founder & CMO
               </motion.p>
 
               <motion.h1
@@ -55,9 +55,9 @@ export function HeroSection() {
                 {...reveal(2)}
                 className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground"
               >
-                Web developer and digital architect. I build scalable products,
-                design intentional systems, and drive measurable growth for
-                Ravenence Limited clients through strategy and code.
+                Technology entrepreneur and digital architect. I build scalable
+                products, AI-powered systems, and growth engines through strategy,
+                design, and code.
               </motion.p>
 
               <motion.div {...reveal(3)} className="mt-8 flex flex-wrap items-center gap-5">
