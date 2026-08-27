@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
+import { getCurrentUser } from '@/lib/auth'
 
 type RouteContext = { params: Promise<{ id: string }> }
 
@@ -22,6 +23,7 @@ export async function GET(_request: NextRequest, { params }: RouteContext) {
 }
 
 export async function PUT(request: NextRequest, { params }: RouteContext) {
+  if (!await getCurrentUser(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const { title, description, imageUrl, projectUrl, technologies, orderIndex } = await request.json()
@@ -49,7 +51,8 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
   }
 }
 
-export async function DELETE(_request: NextRequest, { params }: RouteContext) {
+export async function DELETE(request: NextRequest, { params }: RouteContext) {
+  if (!await getCurrentUser(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const result = await sql`DELETE FROM portfolio WHERE id = ${id} RETURNING id`

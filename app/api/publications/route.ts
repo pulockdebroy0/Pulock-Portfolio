@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
+import { getCurrentUser } from '@/lib/auth'
 
 export async function GET() {
   try {
@@ -16,6 +17,7 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
+  if (!await getCurrentUser(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const data = await request.json()
     const { title, description, imageUrl, publicationUrl, publicationDate, orderIndex } = data

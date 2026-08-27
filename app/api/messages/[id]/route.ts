@@ -1,15 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
+import { getCurrentUser } from '@/lib/auth'
 
 type RouteContext = { params: Promise<{ id: string }> }
 
-function requireAuth(request: NextRequest) {
-  const auth = request.headers.get('authorization')
-  return auth?.startsWith('Bearer ') ? auth.substring(7) : null
+async function requireAuth(request: NextRequest) {
+  return Boolean(await getCurrentUser(request))
 }
 
 export async function GET(request: NextRequest, { params }: RouteContext) {
-  if (!requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!await requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const message = await sql`
@@ -25,7 +25,7 @@ export async function GET(request: NextRequest, { params }: RouteContext) {
 }
 
 export async function PUT(request: NextRequest, { params }: RouteContext) {
-  if (!requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!await requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const { read } = await request.json()
@@ -44,7 +44,7 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
 }
 
 export async function DELETE(request: NextRequest, { params }: RouteContext) {
-  if (!requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!await requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const result = await sql`DELETE FROM messages WHERE id = ${id} RETURNING id`

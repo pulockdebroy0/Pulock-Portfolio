@@ -3,6 +3,12 @@ import sql from '@/lib/db'
 import { hashPassword, generateToken } from '@/lib/auth'
 
 export async function POST(request: NextRequest) {
+  const setupSecret = request.headers.get('x-admin-setup-secret')
+  const configuredSecret = process.env.ADMIN_SECRET
+  if (!configuredSecret || !setupSecret || setupSecret !== configuredSecret) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     // Check if any admin user already exists
     const existingUsers = await sql`
@@ -42,7 +48,7 @@ export async function POST(request: NextRequest) {
     `
 
     // Generate token
-    const token = generateToken()
+    const token = await generateToken(String(result[0].id), result[0].email)
 
     const response = NextResponse.json(
       {

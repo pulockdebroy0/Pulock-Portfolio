@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
 import { createUniqueMediaSlug } from '@/lib/media-slug'
+import { getCurrentUser } from '@/lib/auth'
 
 export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  if (!await getCurrentUser(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const data = await request.json()
     const { title, description, imageUrl, altText, featured } = data
@@ -41,6 +43,7 @@ export async function DELETE(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  if (!await getCurrentUser(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
 
