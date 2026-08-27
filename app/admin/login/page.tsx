@@ -39,7 +39,6 @@ export default function LoginPage() {
 
       if (response.ok) {
         const data = await response.json()
-        localStorage.setItem('admin_token', data.token)
         toast.success('Login successful!')
         router.push('/admin')
       } else {

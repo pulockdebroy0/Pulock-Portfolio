@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
+import { getCurrentUser } from '@/lib/auth'
 
 type RouteContext = { params: Promise<{ id: string }> }
 
-function requireAuth(request: NextRequest) {
-  const auth = request.headers.get('authorization')
-  return auth?.startsWith('Bearer ') ? auth.substring(7) : null
+async function requireAuth(request: NextRequest) {
+  return Boolean(await getCurrentUser(request))
 }
 
 export async function GET(request: NextRequest, { params }: RouteContext) {

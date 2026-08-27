@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
-import { hashPassword, generateToken } from '@/lib/auth'
+import { hashPassword, generateToken, authCookie } from '@/lib/auth'
 
 export async function POST(request: NextRequest) {
   try {
@@ -29,6 +29,10 @@ export async function POST(request: NextRequest) {
     }
 
     const user = users[0]
+    if (typeof email !== 'string' || typeof password !== 'string' || email.length > 254 || password.length > 128) {
+      return NextResponse.json({ error: 'Invalid email or password' }, { status: 401 })
+    }
+
     const passwordHash = hashPassword(password)
 
     if (user.passwordHash !== passwordHash) {
@@ -39,14 +43,11 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate token
-    const token = generateToken()
+    const token = await generateToken(String(user.id), user.email)
 
-    // In production, you'd store this token in a secure session/cookie
-    // For now, we'll return it to the client
     const response = NextResponse.json(
       {
         message: 'Login successful',
-        token,
         user: {
           id: user.id,
           email: user.email,
@@ -56,14 +57,7 @@ export async function POST(request: NextRequest) {
     )
 
     // Set secure HTTP-only cookie
-    response.cookies.set({
-      name: 'admin_token',
-      value: token,
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: 7 * 24 * 60 * 60, // 7 days
-    })
+    response.cookies.set(authCookie(token))
 
     return response
   } catch (error) {
