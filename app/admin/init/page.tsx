@@ -104,13 +104,9 @@ export default function AdminInitPage() {
             {loading ? 'Initializing...' : 'Initialize Admin Account'}
           </button>
 
-          <div className="pt-4 border-t border-border">
-            <p className="text-xs text-foreground/50 mb-2">Credentials to set:</p>
-            <div className="bg-background/50 p-3 rounded text-xs text-foreground/60 space-y-1">
-              <p>Email: pulockkumardeb02@gmail.com</p>
-              <p>Password: Pulock2000@</p>
-            </div>
-          </div>
+          <p className="text-xs leading-5 text-foreground/60">
+            Credentials are read securely from server environment variables and are never displayed in the browser.
+          </p>
         </form>
       </div>
     </div>

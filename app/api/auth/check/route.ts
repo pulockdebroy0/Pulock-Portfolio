@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 
-const secret = new TextEncoder().encode(process.env.ADMIN_SECRET || 'your-secret-key')
+const configuredSecret = process.env.ADMIN_SECRET
+
+function getSecret() {
+  if (!configuredSecret || configuredSecret.length < 32) throw new Error('ADMIN_SECRET is not configured securely')
+  return new TextEncoder().encode(configuredSecret)
+}
 
 export async function GET(request: NextRequest) {
   try {
@@ -12,7 +17,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Verify the token
-    await jwtVerify(token, secret)
+    await jwtVerify(token, getSecret())
 
     return NextResponse.json({ authenticated: true }, { status: 200 })
   } catch (error) {

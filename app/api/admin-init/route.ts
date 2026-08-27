@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
 import { hashPassword } from '@/lib/auth'
 
-const ADMIN_EMAIL = 'pulockkumardeb02@gmail.com'
-const ADMIN_PASSWORD = 'Pulock2000@'
-const INIT_SECRET = process.env.ADMIN_SECRET || 'admin-secret-key'
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
+const INIT_SECRET = process.env.ADMIN_INIT_SECRET
+
 
 export async function POST(request: NextRequest) {
   try {

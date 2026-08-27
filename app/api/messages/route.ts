@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import sql from '@/lib/db'
+import { getCurrentUser } from '@/lib/auth'
 
 export async function GET(request: NextRequest) {
-  const auth = request.headers.get('authorization')
-  if (!auth?.startsWith('Bearer ')) {
+  if (!await getCurrentUser(request)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
   try {

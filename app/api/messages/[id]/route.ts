@@ -9,7 +9,7 @@ async function requireAuth(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest, { params }: RouteContext) {
-  if (!requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!await requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const message = await sql`
@@ -25,7 +25,7 @@ export async function GET(request: NextRequest, { params }: RouteContext) {
 }
 
 export async function PUT(request: NextRequest, { params }: RouteContext) {
-  if (!requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!await requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const { read } = await request.json()
@@ -44,7 +44,7 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
 }
 
 export async function DELETE(request: NextRequest, { params }: RouteContext) {
-  if (!requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!await requireAuth(request)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   try {
     const { id } = await params
     const result = await sql`DELETE FROM messages WHERE id = ${id} RETURNING id`
