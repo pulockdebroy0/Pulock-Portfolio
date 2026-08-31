@@ -55,9 +55,7 @@ export default function MediaPage() {
             description: 'Explore photos and visual content from Pulock Deb Roy - Co-Founder & CMO at Ravenence Limited.',
             url: 'https://pulockdebroy.com/media',
             mainEntity: {
-              '@type': 'Person',
-              name: 'Pulock Deb Roy',
-              url: 'https://pulockdebroy.com',
+              '@id': 'https://pulockdebroy.com/#person',
             },
           }),
         }}

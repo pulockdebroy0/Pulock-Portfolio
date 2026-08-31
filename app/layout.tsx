@@ -120,7 +120,7 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://www.ravenence.com/team/pulock-deb-roy#person",
+        "@id": "https://pulockdebroy.com/#person",
         "name": "Pulock Deb Roy",
         "alternateName": [
           "Pulock Deb Roy",
@@ -135,10 +135,10 @@ export default function RootLayout({
           { "@type": "Occupation", "name": "Founder" },
           { "@type": "Occupation", "name": "Researcher" }
         ],
-        "url": "https://www.ravenence.com/team/pulock-deb-roy",
+        "url": "https://pulockdebroy.com/",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://pulockdebroy.com/"
+          "@id": "https://www.ravenence.com/team/pulock-deb-roy"
         },
         "image": {
           "@type": "ImageObject",
@@ -160,13 +160,24 @@ export default function RootLayout({
           "name": "Sylhet, Bangladesh"
         },
         "sameAs": [
-          "https://www.linkedin.com/in/pulock-deb-roy-833584218",
+          "https://www.linkedin.com/in/pulock-deb-roy-833584218/",
           "https://www.facebook.com/pulockdebroy.dip.9",
-          "https://pulockdebroy.com/"
+          "https://www.ravenence.com/team/pulock-deb-roy"
         ],
         "worksFor": {
-          "@id": "https://ravenence.com/#organization"
+          "@type": "Organization",
+          "@id": "https://www.ravenence.com/#organization",
+          "name": "Ravenence Limited",
+          "url": "https://www.ravenence.com/"
         },
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.ravenence.com/#organization",
+            "name": "Ravenence Limited",
+            "url": "https://www.ravenence.com/"
+          }
+        ],
         "knowsAbout": [
           "Entrepreneurship",
           "Full-Stack Web Development",
@@ -318,6 +329,7 @@ export default function RootLayout({
         "name": "Pulock Deb Roy",
         "url": "https://pulockdebroy.com/",
         "mainEntity": {
+          "@type": "Person",
           "@id": "https://pulockdebroy.com/#person"
         }
       },
