@@ -137,8 +137,8 @@ export default function RootLayout({
         ],
         "url": "https://pulockdebroy.com/",
         "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.ravenence.com/team/pulock-deb-roy"
+          "@type": "ProfilePage",
+          "@id": "https://pulockdebroy.com/#profilepage"
         },
         "image": {
           "@type": "ImageObject",
