@@ -15,8 +15,8 @@ const bricolage = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pulockdebroy.com/'),
-  title: 'Pulock Deb Roy | Entrepreneur, Graphic Designer & Co-Founder',
-  description: 'Pulock Deb Roy is an entrepreneur, graphic designer, and Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, combining creative design, technology, AI, and business strategy.',
+  title: 'Pulock Deb Roy | Entrepreneur, Co-Founder & Researcher',
+  description: 'Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.',
   keywords: [
     'technology entrepreneur',
     'tech entrepreneur Bangladesh',
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     viewportFit: 'cover',
   },
   openGraph: {
-    title: 'Pulock Deb Roy | Entrepreneur, Graphic Designer & Co-Founder',
-    description: 'Pulock Deb Roy is an entrepreneur, graphic designer, and Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, combining creative design, technology, AI, and business strategy.',
+    title: 'Pulock Deb Roy | Entrepreneur, Co-Founder & Researcher',
+    description: 'Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.',
     type: 'website',
     url: 'https://pulockdebroy.com/',
     siteName: 'Pulock Deb Roy',
@@ -75,8 +75,8 @@ export const metadata: Metadata = {
     creator: '@pulockdebroy',
     site: '@pulockdebroy',
     images: ['https://pulockdebroy.com/Pulock.jpeg'],
-    title: 'Pulock Deb Roy | Entrepreneur, Graphic Designer & CMO',
-    description: 'Pulock Deb Roy is an entrepreneur, graphic designer, and Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, combining creative design, technology, AI, and business strategy.',
+    title: 'Pulock Deb Roy | Entrepreneur, Co-Founder & CMO',
+    description: 'Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.',
   },
   icons: {
     icon: [
@@ -120,7 +120,7 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://pulockdebroy.com/#person",
+        "@id": "https://www.ravenence.com/team/pulock-deb-roy#person",
         "name": "Pulock Deb Roy",
         "alternateName": [
           "Pulock Deb Roy",
@@ -128,28 +128,14 @@ export default function RootLayout({
           "Pulock Deb",
           "Pulock Kumar Deb Roy"
         ],
-        "jobTitle": "Technology Entrepreneur, Co-Founder & Chief Marketing Officer",
+        "jobTitle": "Co-Founder & Chief Marketing Officer (CMO)",
         "hasOccupation": [
-          {
-            "@type": "Occupation",
-            "name": "Entrepreneur",
-            "occupationLocation": {
-              "@type": "Country",
-              "name": "Bangladesh"
-            },
-            "description": "Builds technology companies, AI automation systems, digital products, and scalable web platforms."
-          },
-          {
-            "@type": "Occupation",
-            "name": "Graphic Designer",
-            "occupationLocation": {
-              "@type": "Country",
-              "name": "Bangladesh"
-            },
-            "description": "Creates brand identities, visual systems, and digital interfaces that connect creative design with technology and business strategy."
-          }
+          { "@type": "Occupation", "name": "Entrepreneur" },
+          { "@type": "Occupation", "name": "Co-Founder" },
+          { "@type": "Occupation", "name": "Founder" },
+          { "@type": "Occupation", "name": "Researcher" }
         ],
-        "url": "https://pulockdebroy.com/",
+        "url": "https://www.ravenence.com/team/pulock-deb-roy",
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://pulockdebroy.com/"
@@ -164,7 +150,7 @@ export default function RootLayout({
         "telephone": "+88-01739-161076",
         "givenName": "Pulock",
         "familyName": "Deb Roy",
-        "description": "Pulock Deb Roy is an entrepreneur, graphic designer, and Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, combining creative design, technology, AI, and business strategy.",
+        "description": "Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.",
         "nationality": {
           "@type": "Country",
           "name": "Bangladesh"
@@ -182,10 +168,10 @@ export default function RootLayout({
           "@id": "https://ravenence.com/#organization"
         },
         "knowsAbout": [
+          "Entrepreneurship",
           "Full-Stack Web Development",
           "Next.js Development",
           "React Development",
-          "Graphic Design",
           "UI/UX Design",
           "Brand Strategy",
           "AI Automation Systems",
@@ -197,7 +183,11 @@ export default function RootLayout({
           "API Development",
           "Digital Marketing",
           "SEO",
-          "Digital Transformation"
+          "Digital Transformation",
+          "Artificial Intelligence",
+          "Web Technologies",
+          "Business Strategy",
+          "Research"
         ],
         "skills": [
           "Next.js",
@@ -249,7 +239,7 @@ export default function RootLayout({
         "@type": "WebSite",
         "@id": "https://pulockdebroy.com/#website",
         "name": "Pulock Deb Roy - Full-Stack Web Developer",
-        "description": "Pulock Deb Roy is an entrepreneur, graphic designer, and Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, combining creative design, technology, AI, and business strategy.",
+        "description": "Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.",
         "url": "https://pulockdebroy.com/",
         "publisher": {
           "@id": "https://pulockdebroy.com/#person"
@@ -262,7 +252,7 @@ export default function RootLayout({
         "@type": "WebPage",
         "@id": "https://pulockdebroy.com/",
         "name": "Pulock Deb Roy | Co-Founder & CMO | Full-Stack Developer",
-        "description": "Pulock Deb Roy is an entrepreneur, graphic designer, and Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, combining creative design, technology, AI, and business strategy.",
+        "description": "Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.",
         "url": "https://pulockdebroy.com/",
         "author": {
           "@id": "https://pulockdebroy.com/#person"
