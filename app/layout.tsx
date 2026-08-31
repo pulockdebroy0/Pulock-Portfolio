@@ -161,8 +161,13 @@ export default function RootLayout({
         },
         "sameAs": [
           "https://www.linkedin.com/in/pulock-deb-roy-833584218/",
-          "https://www.facebook.com/pulockdebroy.dip.9",
-          "https://www.ravenence.com/team/pulock-deb-roy"
+          "https://www.facebook.com/pulockdebroy.dip.9/",
+          "https://www.instagram.com/pulock_deb_roy/",
+          "https://www.threads.com/@pulock_deb_roy",
+          "https://www.youtube.com/@pulockdebroy",
+          "https://x.com/pulockdebroy",
+          "https://www.ravenence.com/team/pulock-deb-roy",
+          "https://pulockdebroy.com/"
         ],
         "worksFor": {
           "@type": "Organization",
