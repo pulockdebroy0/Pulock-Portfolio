@@ -40,7 +40,7 @@ export function HeroSection() {
                 {...reveal(0)}
                 className="font-mono text-xs uppercase tracking-[0.18em] text-primary"
               >
-                Technology Entrepreneur · Co-Founder & CMO
+                Entrepreneur · Co-Founder & CMO
               </motion.p>
 
               <motion.h1

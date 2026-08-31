@@ -60,7 +60,7 @@ export default function AboutSection() {
             Expertise and experience.
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Pulock Deb Roy is an entrepreneur, graphic designer, and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works across graphic design, UI/UX design, web technologies, artificial intelligence, AI automation, SEO, and digital transformation. He combines creative design, technology, and business strategy to build scalable digital products, strengthen brand positioning, and drive measurable business growth.
+            Pulock Deb Roy is an entrepreneur and the Co-Founder & Chief Marketing Officer (CMO) of Ravenence Limited, where he leads brand strategy, digital growth, AI-driven marketing, and business development initiatives. With a background in Computer Science & Engineering, he works at the intersection of creative design, technology, artificial intelligence, and business strategy. His expertise spans UI/UX design, AI automation, digital marketing, web technologies, SEO, and digital transformation. He works closely with businesses to build scalable digital systems, strengthen brand positioning, and drive measurable growth through technology, creative strategy, research, and data-driven marketing.
           </p>
         </motion.div>
 
