@@ -166,6 +166,7 @@ export default function RootLayout({
           "https://www.threads.com/@pulock_deb_roy",
           "https://www.youtube.com/@pulockdebroy",
           "https://x.com/pulockdebroy",
+          "https://scholar.google.com/citations?user=qH708uoAAAAJ&hl=en",
           "https://www.ravenence.com/team/pulock-deb-roy",
           "https://pulockdebroy.com/"
         ],
