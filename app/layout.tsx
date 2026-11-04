@@ -372,7 +372,7 @@ export default function RootLayout({
             "name": "What is Ravenence Limited?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ravenence Limited is a company founded by Pulock Deb Roy and co-founders. It specializes in custom web applications, AI automation, digital transformation, and growth infrastructure for businesses worldwide."
+              "text": "Ravenence rebuilds business websites around the questions customers ask Google and AI, then keeps publishing answers and tracks how often each client is found and named."
             }
           },
           {
