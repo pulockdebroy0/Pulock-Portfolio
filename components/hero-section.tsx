@@ -9,7 +9,6 @@ const easeOut = [0.16, 1, 0.3, 1] as const
 
 const metrics = [
   { value: '5+', label: 'Years experience' },
-  { value: '20+', label: 'Projects delivered' },
   { value: '100%', label: 'Client satisfaction' },
 ]
 

@@ -18,12 +18,12 @@ const faqs = [
   {
     question: 'How much experience does Pulock have?',
     answer:
-      'Pulock has 5+ years of professional experience in web development and product strategy. He has successfully completed 50+ projects ranging from startup MVPs to enterprise-scale applications. Currently serves as Co-Founder & CMO at Ravenence Limited.',
+      'Pulock has professional experience in web development and product strategy. He currently serves as Co-Founder & CMO at Ravenence Limited.',
   },
   {
     question: 'What is Ravenence Limited?',
     answer:
-      'Ravenence Limited is a government-registered IT firm based in Sylhet, Bangladesh. Founded by Pulock Deb Roy and co-founders, it specializes in custom web applications, AI automation, digital transformation, and growth infrastructure for businesses worldwide.',
+      'Ravenence rebuilds business websites around the questions customers ask Google and AI, then keeps publishing answers and tracks how often each client is found and named.',
   },
   {
     question: 'Does Pulock work on existing projects or only new builds?',

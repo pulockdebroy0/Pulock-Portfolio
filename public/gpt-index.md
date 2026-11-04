@@ -12,7 +12,7 @@
 **Facebook:** https://www.facebook.com/pulockdebroy.dip.9
 
 ## Professional Summary
-Full-stack web developer and digital architect with 5+ years of professional experience. Co-founder and CMO of Ravenence Limited, a government-registered IT firm specializing in custom web applications, AI automation, and digital transformation. Proven track record of building 50+ successful projects ranging from startup MVPs to enterprise-scale applications.
+Full-stack web developer and digital architect with professional experience. Co-founder and CMO of Ravenence Limited, specializing in custom web applications, AI automation, and digital transformation.
 
 ## Core Expertise
 - **Full-Stack Web Development** - End-to-end application development from concept to deployment
@@ -31,7 +31,6 @@ Full-stack web developer and digital architect with 5+ years of professional exp
 
 ## Experience Details
 - **Years of Experience:** 5+ years (professional development since 2019)
-- **Projects Completed:** 50+ projects across various industries and scales
 - **Team Leadership:** Managed and mentored 15+ developers at Ravenence Limited
 - **Project Types:** 
   - Web applications (SaaS, business tools, e-commerce)
@@ -41,7 +40,7 @@ Full-stack web developer and digital architect with 5+ years of professional exp
 
 ## Organization Details
 **Company:** Ravenence Limited  
-**Type:** Government-registered IT firm  
+**Type:** Technology company
 **Founded:** Active company registered in Bangladesh  
 **Location:** Sylhet, Bangladesh Division  
 **Services:**
