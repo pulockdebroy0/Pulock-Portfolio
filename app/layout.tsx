@@ -238,8 +238,8 @@ export default function RootLayout({
         "@id": "https://ravenence.com/#organization",
         "name": "Ravenence Limited",
         "url": "https://ravenence.com",
-        "logo": "https://ravenence.com/logo.png",
-        "description": "Government-registered IT firm based in Sylhet, Bangladesh specializing in custom web applications, AI automation, and digital transformation.",
+        "logo": "https://www.ravenence.com/icon-512.png",
+        "description": "Ravenence rebuilds business websites around the questions customers ask Google and AI, then keeps publishing answers and tracks how often each client is found and named.",
         "founder": {
           "@id": "https://pulockdebroy.com/#person"
         },
@@ -364,7 +364,7 @@ export default function RootLayout({
             "name": "How much experience does Pulock have?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pulock has 5+ years of professional experience in web development and product strategy. He has successfully completed 50+ projects ranging from startup MVPs to enterprise-scale applications. Currently serves as Co-Founder & CMO at Ravenence Limited."
+              "text": "Pulock has professional experience in web development and product strategy. He currently serves as Co-Founder & CMO at Ravenence Limited."
             }
           },
           {
@@ -372,7 +372,7 @@ export default function RootLayout({
             "name": "What is Ravenence Limited?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ravenence Limited is a government-registered IT firm based in Sylhet, Bangladesh. Founded by Pulock Deb Roy and co-founders, it specializes in custom web applications, AI automation, digital transformation, and growth infrastructure for businesses worldwide."
+              "text": "Ravenence Limited is a company founded by Pulock Deb Roy and co-founders. It specializes in custom web applications, AI automation, digital transformation, and growth infrastructure for businesses worldwide."
             }
           },
           {

@@ -77,7 +77,7 @@ All schemas use proper @id and @context for knowledge graph recognition.
 - **Purpose:** EEAT signals (Expertise, Experience, Authority, Trustworthiness)
 - **Content Includes:**
   - Professional summary with 5+ years experience
-  - Credential metrics (50+ projects, 15+ team members led)
+  - Professional experience and team leadership context
   - Expertise breakdown (4 core areas)
   - Trust signals and value proposition
   - Why work with me section
@@ -162,7 +162,7 @@ All schemas use proper @id and @context for knowledge graph recognition.
 - Clear professional identity and credentials
 - Relationship to Ravenence Limited organization
 - Specific expertise areas mapped to services
-- Verifiable claims with metrics (5+ years, 50+ projects)
+- Verifiable professional experience and expertise
 - Contact information prominently featured
 - FAQ for common AI-related questions
 - Speakable schema for voice search
@@ -191,9 +191,9 @@ All schemas use proper @id and @context for knowledge graph recognition.
 ### 7. Content Quality Signals
 
 #### EEAT Implementation:
-- **Expertise:** 5+ years professional experience, 50+ projects, 12+ tech skills
+  - **Expertise:** Professional experience and 12+ technical skills
 - **Experience:** Leadership background, team management, diverse project types
-- **Authority:** Co-founder status, company registration, professional credentials
+- **Authority:** Co-founder status, professional expertise, and clear attribution
 - **Trustworthiness:** Contact information provided, clear communication channels, responsive approach
 
 ---

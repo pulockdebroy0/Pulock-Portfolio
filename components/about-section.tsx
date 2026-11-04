@@ -39,7 +39,6 @@ const expertise = [
 
 const credentials = [
   { label: 'Years of Experience', value: '5+' },
-  { label: 'Projects Completed', value: '50+' },
   { label: 'Tech Stack Mastery', value: '12+' },
   { label: 'Team Members Led', value: '15+' },
 ]

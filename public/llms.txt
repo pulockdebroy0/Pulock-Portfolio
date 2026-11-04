@@ -29,7 +29,6 @@ Expertise:
 
 # Experience
 Years of Experience: 5+
-Projects Completed: 50+
 Team Size Managed: 15+
 
 # Technologies
@@ -38,7 +37,7 @@ Secondary: Node.js, Tailwind CSS, Framer Motion, AI/ML Tools
 
 # Company Information
 Ravenence Limited:
-- Type: Government-registered IT firm
+- Type: Technology company
 - Location: Sylhet, Bangladesh
 - Services: Web development, AI automation, Digital transformation
 - Website: https://ravenence.com
